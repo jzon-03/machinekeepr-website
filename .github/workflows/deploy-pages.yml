@@ -35,15 +35,15 @@ jobs:
         run: npm run build -- --configuration production --base-href /
 
       - name: SPA fallback
-        run: cp dist/machinekeepr-website/index.html dist/machinekeepr-website/404.html
+        run: cp dist/machinekeepr-website/browser/index.html dist/machinekeepr-website/browser/404.html
 
       - name: Ensure custom domain
-        run: echo "www.machinekeepr.com" > dist/machinekeepr-website/CNAME
+        run: echo "www.machinekeepr.com" > dist/machinekeepr-website/browser/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/machinekeepr-website
+          path: dist/machinekeepr-website/browser
 
   deploy:
     environment:
