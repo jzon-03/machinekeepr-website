@@ -1,0 +1,70 @@
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-head p {
+  color: var(--mk-muted);
+  max-width: 70ch;
+}
+
+.split {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.panel {
+  border: 1px solid var(--mk-border);
+  border-radius: 0.75rem;
+  background: var(--mk-surface);
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.specs {
+  margin-top: 1.5rem;
+}
+
+.table {
+  border: 1px solid var(--mk-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.row > div {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--mk-border);
+}
+
+.row.head {
+  font-weight: 700;
+  background: var(--mk-soft);
+}
+
+.row:last-child > div {
+  border-bottom: 0;
+}
+
+@media (max-width: 860px) {
+  .split,
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

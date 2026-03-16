@@ -1,0 +1,103 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--mk-primary);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.12;
+}
+
+.hero p {
+  color: var(--mk-muted);
+  max-width: 65ch;
+}
+
+.cta-row {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border: 1px solid var(--mk-border);
+  border-radius: 0.6rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: var(--mk-text);
+  font-weight: 600;
+  background: var(--mk-surface);
+}
+
+.btn.primary {
+  background: var(--mk-primary);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.grid-3 {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--mk-border);
+  background: var(--mk-surface);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: var(--mk-muted);
+}
+
+.value {
+  margin-top: 2rem;
+  border: 1px solid var(--mk-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: var(--mk-surface);
+}
+
+.value h2 {
+  margin-top: 0;
+}
+
+.value ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

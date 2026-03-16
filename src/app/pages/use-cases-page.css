@@ -1,0 +1,38 @@
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  margin-top: 0;
+  color: var(--mk-muted);
+}
+
+.cards {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--mk-border);
+  border-radius: 0.75rem;
+  background: var(--mk-surface);
+  padding: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: var(--mk-muted);
+}
+
+@media (max-width: 860px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -57,3 +57,43 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Deploy to GitHub Pages (`www.machinekeepr.com`)
+
+This repo is configured to auto-deploy to GitHub Pages using GitHub Actions via `.github/workflows/deploy-pages.yml`.
+
+### 1) GitHub repository setup
+
+1. Push this project to your GitHub repo.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Make sure your default deployment branch is `main` (the workflow runs on pushes to `main`).
+
+### 2) Custom domain in GitHub Pages
+
+1. In **Settings → Pages**, set **Custom domain** to `www.machinekeepr.com`.
+2. Keep **Enforce HTTPS** enabled after DNS starts resolving correctly.
+
+`public/CNAME` is already included and also enforced during CI build output.
+
+### 3) GoDaddy DNS records
+
+In your GoDaddy DNS manager for `machinekeepr.com`:
+
+- Add a `CNAME` record:
+	- **Host**: `www`
+	- **Points to**: `jzon-03.github.io`
+	- **TTL**: default (e.g. 1 hour)
+
+Optional root-domain redirect recommendation:
+
+- Forward `machinekeepr.com` to `https://www.machinekeepr.com` using GoDaddy Forwarding,
+	so all traffic uses your `www` host.
+
+### 4) Validate deployment
+
+1. Push to `main`.
+2. Watch **Actions → Deploy to GitHub Pages** complete successfully.
+3. Open `https://www.machinekeepr.com`.
+
+DNS propagation may take from a few minutes up to 24–48 hours depending on resolver caches.

@@ -1,0 +1,39 @@
+<section>
+  <h1>Contact & Demo Request</h1>
+  <p class="intro">Tell us your site size and goals. We will follow up with a tailored setup proposal.</p>
+</section>
+
+<section class="layout">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <label>
+      Name
+      <input type="text" formControlName="name" autocomplete="name" />
+    </label>
+
+    <label>
+      Company
+      <input type="text" formControlName="company" autocomplete="organization" />
+    </label>
+
+    <label>
+      Work Email
+      <input type="email" formControlName="email" autocomplete="email" />
+    </label>
+
+    <label>
+      Message
+      <textarea rows="5" formControlName="message"></textarea>
+    </label>
+
+    <p class="error" [hidden]="!isInvalid()">Please complete all required fields with valid values.</p>
+
+    <button type="submit">Send Request</button>
+  </form>
+
+  <aside class="panel" aria-label="Sales details">
+    <h2>Sales Contact</h2>
+    <p><strong>Email:</strong> sales@machinekeepr.com</p>
+    <p><strong>Service Window:</strong> Mon–Fri, 9:00–17:00</p>
+    <p><strong>Scope:</strong> Device sales, on-prem setup, and rollout planning.</p>
+  </aside>
+</section>

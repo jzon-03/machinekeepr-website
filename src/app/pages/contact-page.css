@@ -1,0 +1,80 @@
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  margin-top: 0;
+  color: var(--mk-muted);
+}
+
+.layout {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 1rem;
+}
+
+.form,
+.panel {
+  border: 1px solid var(--mk-border);
+  border-radius: 0.75rem;
+  background: var(--mk-surface);
+  padding: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  border: 1px solid var(--mk-border);
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  color: var(--mk-text);
+  background: #ffffff;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--mk-focus);
+  outline-offset: 2px;
+}
+
+button {
+  min-height: 2.7rem;
+  border: 0;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--mk-primary);
+}
+
+.error {
+  color: var(--mk-danger);
+  margin: 0;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.panel p {
+  color: var(--mk-muted);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
