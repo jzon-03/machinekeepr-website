@@ -67,7 +67,7 @@ This repo is configured to auto-deploy to GitHub Pages using GitHub Actions via 
 1. Push this project to your GitHub repo.
 2. In GitHub, open **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Make sure your default deployment branch is `main` (the workflow runs on pushes to `main`).
+4. Make sure your default deployment branch is `master` (the workflow runs on pushes to `master`).
 
 ### 2) Custom domain in GitHub Pages
 
@@ -92,7 +92,7 @@ Optional root-domain redirect recommendation:
 
 ### 4) Validate deployment
 
-1. Push to `main`.
+1. Push to `master`.
 2. Watch **Actions → Deploy to GitHub Pages** complete successfully.
 3. Open `https://www.machinekeepr.com`.
 
