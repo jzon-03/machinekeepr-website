@@ -3,7 +3,15 @@
 <header class="site-header" aria-label="Primary">
   <div class="header-inner">
     <a class="brand" routerLink="/" aria-label="MachineKeepr home">
-      <span class="brand-mark" aria-hidden="true">MK</span>
+      <img
+        class="brand-logo"
+        [ngSrc]="'machinekeepr.svg'"
+        width="164"
+        height="32"
+        alt=""
+        aria-hidden="true"
+        priority
+      />
       <span class="brand-text">MachineKeepr</span>
     </a>
 
