@@ -48,18 +48,16 @@
   gap: 0.5rem;
   text-decoration: none;
   color: var(--mk-text);
-  font-weight: 700;
 }
 
-.brand-mark {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  background: var(--mk-primary);
-  color: #ffffff;
-  display: inline-grid;
-  place-items: center;
-  font-size: 0.75rem;
+.brand-logo {
+  width: auto;
+  height: 2.35rem;
+}
+
+.brand-text {
+  font-weight: 700;
+  color: var(--mk-brand-text);
 }
 
 .main-nav {
