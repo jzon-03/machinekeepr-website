@@ -1,14 +1,21 @@
 :root {
-	--mk-bg: #f8fafc;
+	--mk-bg: #f8f6f6;
 	--mk-surface: #ffffff;
-	--mk-text: #0f172a;
-	--mk-muted: #475569;
-	--mk-border: #dbe3ef;
-	--mk-primary: #1d4ed8;
-	--mk-brand-text: #4c1d95;
-	--mk-soft: #e8efff;
-	--mk-focus: #0ea5e9;
-	--mk-danger: #b91c1c;
+	--mk-text: #1f1f1f;
+	--mk-muted: #57534e;
+	--mk-border: #e7dddd;
+	--mk-primary: #c62828;
+	--mk-brand-text: #991b1b;
+	--mk-soft: #fde8e8;
+	--mk-focus: #991b1b;
+	--mk-danger: #991b1b;
+	--mk-header-blue: #0f2a45;
+	--mk-header-gray: #2f343d;
+	--mk-header-foreground: #f8fafc;
+	--mk-header-muted: #d1d5db;
+	--mk-header-soft: rgba(248, 250, 252, 0.14);
+	--mk-header-border: rgba(248, 250, 252, 0.22);
+	--mk-elev-1: 0 12px 28px rgba(15, 42, 69, 0.2);
 }
 
 * {
