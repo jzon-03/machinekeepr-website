@@ -26,8 +26,10 @@
     </label>
 
     <p class="error" [hidden]="!isInvalid()">Please complete all required fields with valid values.</p>
+    <p class="success" [hidden]="!submitSucceeded()" aria-live="polite">Request sent successfully. We will get back to you soon.</p>
+    <p class="error" [hidden]="!submitError()" aria-live="polite">{{ submitError() }}</p>
 
-    <button type="submit">Send Request</button>
+    <button type="submit" [disabled]="isSubmitting()">{{ isSubmitting() ? 'Sending...' : 'Send Request' }}</button>
   </form>
 
   <aside class="panel" aria-label="Sales details">

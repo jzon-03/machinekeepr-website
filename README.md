@@ -58,6 +58,45 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
+## Contact form email (No backend host)
+
+This project now sends contact form submissions directly from the browser using EmailJS.
+
+### 1) Create EmailJS account and connect Gmail
+
+1. Create/sign in at EmailJS.
+2. Add an email service and connect `jzon03@gmail.com` (Gmail provider).
+3. Create an email template.
+
+### 2) Map template variables
+
+In your EmailJS template, use these fields:
+
+- `from_name`
+- `company`
+- `email`
+- `message`
+- `reply_to`
+- `to_email`
+
+### 3) Configure project keys
+
+Edit `src/app/config/emailjs-config.ts` and set:
+
+- `serviceId`
+- `templateId`
+- `publicKey`
+- `recipientEmail` (keep `jzon03@gmail.com` or change if needed)
+
+### 4) Run and deploy
+
+```bash
+npm install
+npm start
+```
+
+This works on GitHub Pages because it does not require your own backend host.
+
 ## Deploy to GitHub Pages (`www.machinekeepr.com`)
 
 This repo is configured to auto-deploy to GitHub Pages using GitHub Actions via `.github/workflows/deploy-pages.yml`.
