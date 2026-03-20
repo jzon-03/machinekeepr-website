@@ -60,8 +60,18 @@ button {
   background: var(--mk-primary);
 }
 
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .error {
   color: var(--mk-danger);
+  margin: 0;
+}
+
+.success {
+  color: #166534;
   margin: 0;
 }
 
