@@ -52,28 +52,68 @@ h1 {
   overflow: hidden;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 220px 1fr;
+.capabilities-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.row > div {
+.capabilities-table th,
+.capabilities-table td {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--mk-border);
+  text-align: left;
+  vertical-align: top;
 }
 
-.row.head {
+.capabilities-table thead th {
   font-weight: 700;
   background: var(--mk-soft);
 }
 
-.row:last-child > div {
+.capabilities-table tbody th {
+  width: 220px;
+  font-weight: 600;
+}
+
+.capabilities-table tbody tr:last-child th,
+.capabilities-table tbody tr:last-child td {
   border-bottom: 0;
 }
 
 @media (max-width: 860px) {
-  .split,
-  .row {
+  .split {
     grid-template-columns: 1fr;
+  }
+
+  .capabilities-table thead {
+    display: none;
+  }
+
+  .capabilities-table,
+  .capabilities-table tbody,
+  .capabilities-table tr,
+  .capabilities-table th,
+  .capabilities-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .capabilities-table tbody tr {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--mk-border);
+  }
+
+  .capabilities-table tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .capabilities-table tbody th,
+  .capabilities-table tbody td {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .capabilities-table tbody th {
+    margin-bottom: 0.3rem;
   }
 }
