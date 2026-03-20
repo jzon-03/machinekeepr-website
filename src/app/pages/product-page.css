@@ -15,6 +15,15 @@ h1 {
   align-items: center;
 }
 
+.product-image {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: var(--mk-elev-1);
+}
+
 .panel {
   border: 1px solid var(--mk-border);
   border-radius: 0.75rem;

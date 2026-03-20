@@ -21,8 +21,8 @@
 }
 
 .site-header {
-  border-bottom: 1px solid var(--mk-border);
-  background: var(--mk-surface);
+  border-bottom: 1px solid var(--mk-header-border);
+  background: linear-gradient(132deg, var(--mk-header-blue) 0 56%, var(--mk-header-gray) 56% 100%);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -47,17 +47,28 @@
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: var(--mk-text);
+  color: var(--mk-header-foreground);
 }
 
 .brand-logo {
-  width: auto;
-  height: 2.35rem;
+  width: 2rem;
+  height: auto;
+}
+
+.brand-logo-shell {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .brand-text {
   font-weight: 700;
-  color: var(--mk-brand-text);
+  color: var(--mk-header-foreground);
 }
 
 .main-nav {
@@ -70,7 +81,7 @@
 
 .main-nav a {
   text-decoration: none;
-  color: var(--mk-muted);
+  color: var(--mk-header-muted);
   font-weight: 600;
   padding: 0.4rem 0.6rem;
   border-radius: 0.5rem;
@@ -78,8 +89,8 @@
 
 .main-nav a.active,
 .main-nav a:hover {
-  color: var(--mk-text);
-  background: var(--mk-soft);
+  color: var(--mk-header-foreground);
+  background: var(--mk-header-soft);
 }
 
 .site-main {

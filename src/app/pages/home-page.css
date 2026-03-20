@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  justify-self: end;
+  border-radius: 0.75rem;
+  box-shadow: var(--mk-elev-1);
+}
+
 .eyebrow {
   color: var(--mk-primary);
   font-weight: 700;
@@ -95,6 +105,10 @@
 @media (max-width: 880px) {
   .hero {
     grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    justify-self: stretch;
   }
 
   .grid-3 {
