@@ -83,7 +83,7 @@ export class SeoService {
     for (const entry of entries) {
       const script = this.document.createElement('script');
       script.type = 'application/ld+json';
-      script.dataset['seoManaged'] = 'true';
+      script.setAttribute('data-seo-managed', 'true');
       script.text = JSON.stringify(entry);
       this.document.head.appendChild(script);
     }
