@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import emailjs from '@emailjs/browser';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { EMAILJS_CONFIG } from '../config/emailjs-config';
 
@@ -39,6 +38,8 @@ export class ContactPage {
     this.isSubmitting.set(true);
 
     try {
+      const { default: emailjs } = await import('@emailjs/browser');
+
       if (
         EMAILJS_CONFIG.serviceId.startsWith('YOUR_') ||
         EMAILJS_CONFIG.templateId.startsWith('YOUR_') ||
