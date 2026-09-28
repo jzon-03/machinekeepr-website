@@ -2,6 +2,8 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { App } from './app';
+import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
+import { TermsOfService } from './pages/terms-of-service/terms-of-service';
 
 @NgModule({
   imports: [
@@ -11,6 +13,5 @@ import { App } from './app';
   providers: [
     provideBrowserGlobalErrorListeners()
   ],
-  bootstrap: [App]
 })
 export class AppModule { }

@@ -264,6 +264,68 @@ const contactSeo: SeoConfig = {
   ]
 };
 
+const privacyPolicySeo: SeoConfig = {
+  title: 'Privacy Policy | MachineKeepr',
+  description:
+    'Read the privacy policy for MachineKeepr, detailing how we handle data for on-prem machine monitoring solutions.',
+  path: '/privacy-policy',
+  keywords: [
+    'privacy policy',
+    'data protection',
+    'on-prem machine monitoring privacy',
+    'MachineKeepr privacy'
+  ],
+  image: DEFAULT_OG_IMAGE,
+  imageAlt: 'MachineKeepr privacy policy',
+  robots: DEFAULT_ROBOTS,
+  structuredData: [
+    ORGANIZATION_SCHEMA,
+    buildBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Privacy Policy', path: '/privacy-policy' }
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'MachineKeepr Privacy Policy',
+      url: buildAbsoluteUrl('/privacy-policy'),
+      description:
+        'Read the privacy policy for MachineKeepr, detailing how we handle data for on-prem machine monitoring solutions.'
+    } satisfies SeoStructuredData
+  ]
+};
+
+const termsOfServiceSeo: SeoConfig = {
+  title: 'Terms of Service | MachineKeepr',
+  description:
+    'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our on-prem machine monitoring solutions.',
+  path: '/terms-of-service',
+  keywords: [
+    'terms of service',
+    'user agreement',
+    'on-prem machine monitoring terms',
+    'MachineKeepr terms'
+  ],
+  image: DEFAULT_OG_IMAGE,
+  imageAlt: 'MachineKeepr terms of service',
+  robots: DEFAULT_ROBOTS,
+  structuredData: [
+    ORGANIZATION_SCHEMA,
+    buildBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Terms of Service', path: '/terms-of-service' }
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'MachineKeepr Terms of Service',
+      url: buildAbsoluteUrl('/terms-of-service'),
+      description:
+        'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our on-prem machine monitoring solutions.'
+    } satisfies SeoStructuredData
+  ]
+};
+
 export const routes: Routes = [
   {
     path: '',
@@ -271,12 +333,12 @@ export const routes: Routes = [
     data: { seo: homeSeo },
     loadComponent: () => import('./pages/home-page').then((m) => m.HomePage)
   },
-  {
-    path: 'product',
-    title: productSeo.title,
-    data: { seo: productSeo },
-    loadComponent: () => import('./pages/product-page').then((m) => m.ProductPage)
-  },
+  // {
+  //   path: 'product',
+  //   title: productSeo.title,
+  //   data: { seo: productSeo },
+  //   loadComponent: () => import('./pages/product-page').then((m) => m.ProductPage)
+  // },
   {
     path: 'use-cases',
     title: useCasesSeo.title,
@@ -294,6 +356,18 @@ export const routes: Routes = [
     title: docsSeo.title,
     data: { seo: docsSeo },
     loadComponent: () => import('./pages/docs-page').then((m) => m.DocsPage)
+  },
+  {
+    path: 'privacy-policy',
+    title: privacyPolicySeo.title,
+    data: { seo: privacyPolicySeo },
+    loadComponent: () => import('./pages/privacy-policy/privacy-policy').then((m) => m.PrivacyPolicy)
+  },
+  {
+    path: 'terms-of-service',
+    title: termsOfServiceSeo.title,
+    data: { seo: termsOfServiceSeo },
+    loadComponent: () => import('./pages/terms-of-service/terms-of-service').then((m) => m.TermsOfService)
   },
   {
     path: 'contact',
