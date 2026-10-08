@@ -42,15 +42,15 @@ export const WEBSITE_SCHEMA: SeoStructuredData = {
 };
 
 export const DEFAULT_SEO: SeoConfig = {
-  title: 'On-Prem Machine Monitoring Software for SMB Manufacturers | MachineKeepr',
+  title: 'Cloud-Based SaaS Machine Monitoring Software for SMB Manufacturers | MachineKeepr',
   description:
-    'MachineKeepr delivers on-prem machine monitoring with a ready-to-deploy Raspberry Pi edge device, local dashboards, and secure shop-floor visibility for SMB manufacturers.',
+    'MachineKeepr delivers cloud-based SaaS machine monitoring with live dashboards, secure shop-floor visibility, and fast deployment for SMB manufacturers.',
   path: '/',
   keywords: [
-    'on-prem machine monitoring',
-    'edge monitoring device',
+    'cloud-based machine monitoring',
     'manufacturing dashboard',
     'shop floor visibility',
+    'machine status software',
     'MachineKeepr'
   ],
   image: DEFAULT_OG_IMAGE,
