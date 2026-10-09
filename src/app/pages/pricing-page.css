@@ -180,6 +180,13 @@ h1 {
   margin-top: 1.5rem;
 }
 
+.coming-soon {
+  background: var(--mk-muted);
+  color: #ffffff;
+  border-color: transparent;
+  cursor: not-allowed;
+}
+
 @media (max-width: 860px) {
   .plans {
     grid-template-columns: 1fr;
