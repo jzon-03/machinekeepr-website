@@ -12,19 +12,19 @@ import {
 } from './config/seo';
 
 const homeSeo: SeoConfig = {
-  title: 'On-Prem Machine Monitoring Software for SMB Manufacturers | MachineKeepr',
+  title: 'Cloud-Based SaaS Machine Monitoring Software for SMB Manufacturers | MachineKeepr',
   description:
-    'MachineKeepr combines a ready-to-deploy Raspberry Pi edge device with on-prem software for real-time machine status visibility, shop-floor dashboards, and secure local data control.',
+    'MachineKeepr provides a cloud-based SaaS platform for real-time machine status visibility, shop-floor dashboards, and secure operational data access.',
   path: '/',
   keywords: [
-    'on-prem machine monitoring',
+    'cloud-based SaaS machine monitoring',
     'manufacturing dashboard',
     'shop floor visibility',
-    'edge monitoring device',
-    'machine status software'
+    'machine status software',
+    'production visibility platform'
   ],
   image: DEFAULT_OG_IMAGE,
-  imageAlt: 'MachineKeepr dashboard displayed on an edge device screenshot',
+  imageAlt: 'MachineKeepr dashboard screenshot',
   robots: DEFAULT_ROBOTS,
   structuredData: [
     ORGANIZATION_SCHEMA,
@@ -36,7 +36,7 @@ const homeSeo: SeoConfig = {
       name: 'MachineKeepr home',
       url: SEO_BASE_URL,
       description:
-        'MachineKeepr provides on-prem machine monitoring, dashboards, and edge visibility for SMB manufacturers.',
+        'MachineKeepr provides cloud-based SaaS machine monitoring, dashboards, and edge visibility for SMB manufacturers.',
       isPartOf: {
         '@type': 'WebSite',
         name: 'MachineKeepr',
@@ -47,16 +47,16 @@ const homeSeo: SeoConfig = {
 };
 
 const productSeo: SeoConfig = {
-  title: 'MachineKeepr-D01-32 Edge Terminal for Shop Floor Visibility | MachineKeepr',
+  title: 'MachineKeepr SaaS Monitoring Platform for Shop Floor Visibility | MachineKeepr',
   description:
-    'Explore the MachineKeepr-D01-32, a 7-inch Raspberry Pi 5 edge terminal with MachineKeepr preloaded for on-prem machine monitoring and local operations dashboards.',
+    'Explore MachineKeepr, a cloud-based SaaS monitoring platform for live machine status, production visibility, and operations dashboards.',
   path: '/product',
   keywords: [
-    'MachineKeepr-D01-32',
-    'Raspberry Pi 5 industrial display',
-    'edge terminal',
-    'shop floor dashboard hardware',
-    'machine monitoring terminal'
+    'MachineKeepr SaaS platform',
+    'shop floor dashboard software',
+    'production visibility platform',
+    'machine monitoring dashboard',
+    'factory operations software'
   ],
   image: DEFAULT_OG_IMAGE,
   imageAlt: 'MachineKeepr product dashboard view',
@@ -71,9 +71,9 @@ const productSeo: SeoConfig = {
     {
       '@context': 'https://schema.org',
       '@type': 'Product',
-      name: 'MachineKeepr-D01-32',
+      name: 'MachineKeepr SaaS Monitoring Platform',
       description:
-        'A 7-inch edge terminal built on Raspberry Pi 5 hardware with MachineKeepr preloaded for on-prem machine monitoring.',
+        'A cloud-based SaaS platform for plant visibility, real-time machine monitoring, and operations dashboards.',
       brand: {
         '@type': 'Brand',
         name: 'MachineKeepr'
@@ -83,23 +83,18 @@ const productSeo: SeoConfig = {
         name: 'MachineKeepr',
         url: SEO_BASE_URL
       },
-      category: 'Industrial edge monitoring terminal',
+      category: 'Industrial monitoring software',
       image: [buildAbsoluteUrl('/machinekeepr_screenshot.png')],
       additionalProperty: [
         {
           '@type': 'PropertyValue',
-          name: 'Display',
-          value: '7-inch Waveshare all-in-one display'
-        },
-        {
-          '@type': 'PropertyValue',
-          name: 'Compute base',
-          value: 'Raspberry Pi 5'
-        },
-        {
-          '@type': 'PropertyValue',
           name: 'Deployment model',
-          value: 'Edge device with on-prem server service'
+          value: 'Cloud-based SaaS service'
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Access model',
+          value: 'Browser-based dashboards and live shop-floor visibility'
         }
       ]
     } satisfies SeoStructuredData
@@ -109,7 +104,7 @@ const productSeo: SeoConfig = {
 const useCasesSeo: SeoConfig = {
   title: 'Machine Monitoring Use Cases for Manufacturing and Maintenance | MachineKeepr',
   description:
-    'See how MachineKeepr supports manufacturing cell monitoring, maintenance response boards, and local operations control rooms with on-prem visibility tools.',
+    'See how MachineKeepr supports manufacturing cell monitoring, maintenance response boards, and local operations control rooms with cloud-based SaaS visibility tools.',
   path: '/use-cases',
   keywords: [
     'machine monitoring use cases',
@@ -139,15 +134,15 @@ const useCasesSeo: SeoConfig = {
 };
 
 const pricingSeo: SeoConfig = {
-  title: 'Machine Monitoring Pricing for Edge Devices and On-Prem Software | MachineKeepr',
+  title: 'Machine Monitoring Pricing for Cloud-Based SaaS | MachineKeepr',
   description:
-    'Review starter pricing for MachineKeepr hardware and annual on-prem software service, including single-site packs, operations bundles, and custom deployments.',
+    'Review pricing for MachineKeepr cloud-based SaaS plans, including single-site subscriptions, operations bundles, and custom deployments.',
   path: '/pricing',
   keywords: [
     'machine monitoring pricing',
-    'on-prem software pricing',
+    'cloud-based SaaS pricing',
     'manufacturing dashboard cost',
-    'edge monitoring device pricing',
+    'production visibility software pricing',
     'MachineKeepr quote'
   ],
   image: DEFAULT_OG_IMAGE,
@@ -170,14 +165,14 @@ const pricingSeo: SeoConfig = {
           name: 'Starter Site',
           price: '1490',
           priceCurrency: 'USD',
-          description: 'One MachineKeepr-D01-32 device with a 1-year on-prem service license.'
+          description: 'A 1-year MachineKeepr cloud-based SaaS subscription for a single site.'
         },
         {
           '@type': 'Offer',
           name: 'Operations Pack',
           price: '4290',
           priceCurrency: 'USD',
-          description: 'Three devices with a 1-year on-prem service license and priority onboarding.'
+          description: 'A multi-site MachineKeepr SaaS subscription with priority onboarding.'
         },
         {
           '@type': 'Offer',
@@ -192,11 +187,11 @@ const pricingSeo: SeoConfig = {
 const docsSeo: SeoConfig = {
   title: 'Deployment and Integration Documentation | MachineKeepr',
   description:
-    'Read MachineKeepr deployment docs for quick start, on-prem server setup, machine data integration, and troubleshooting guidance.',
+    'Read MachineKeepr deployment docs for quick start, cloud deployment setup, machine data integration, and troubleshooting guidance.',
   path: '/docs',
   keywords: [
     'MachineKeepr documentation',
-    'on-prem server setup guide',
+    'cloud deployment setup guide',
     'machine monitoring integration docs',
     'deployment checklist',
     'industrial dashboard troubleshooting'
@@ -216,20 +211,20 @@ const docsSeo: SeoConfig = {
       name: 'MachineKeepr documentation',
       url: buildAbsoluteUrl('/docs'),
       description:
-        'Documentation covering MachineKeepr quick start, on-prem server setup, integrations, and troubleshooting.'
+        'Documentation covering MachineKeepr quick start, cloud deployment setup, integrations, and troubleshooting.'
     } satisfies SeoStructuredData
   ]
 };
 
 const contactSeo: SeoConfig = {
-  title: 'Request a Demo for On-Prem Machine Monitoring | MachineKeepr',
+  title: 'Request a Demo for Cloud-Based SaaS Machine Monitoring | MachineKeepr',
   description:
-    'Contact MachineKeepr to request a demo, discuss site rollout plans, and get pricing for on-prem machine monitoring hardware and software.',
+    'Contact MachineKeepr to request a demo, discuss site rollout plans, and get pricing for cloud-based SaaS machine monitoring hardware and software.',
   path: '/contact',
   keywords: [
     'request machine monitoring demo',
     'contact industrial software sales',
-    'on-prem dashboard consultation',
+    'cloud-based SaaS dashboard consultation',
     'MachineKeepr quote',
     'manufacturing visibility demo'
   ],
@@ -248,7 +243,7 @@ const contactSeo: SeoConfig = {
       name: 'Contact MachineKeepr',
       url: buildAbsoluteUrl('/contact'),
       description:
-        'Request a demo, get deployment guidance, and contact MachineKeepr for on-prem machine monitoring solutions.',
+        'Request a demo, get deployment guidance, and contact MachineKeepr for cloud-based SaaS machine monitoring solutions.',
       mainEntity: {
         '@type': 'Organization',
         name: 'MachineKeepr',
@@ -267,12 +262,12 @@ const contactSeo: SeoConfig = {
 const privacyPolicySeo: SeoConfig = {
   title: 'Privacy Policy | MachineKeepr',
   description:
-    'Read the privacy policy for MachineKeepr, detailing how we handle data for on-prem machine monitoring solutions.',
+    'Read the privacy policy for MachineKeepr, detailing how we handle data for cloud-based SaaS machine monitoring solutions.',
   path: '/privacy-policy',
   keywords: [
     'privacy policy',
     'data protection',
-    'on-prem machine monitoring privacy',
+    'cloud-based SaaS machine monitoring privacy',
     'MachineKeepr privacy'
   ],
   image: DEFAULT_OG_IMAGE,
@@ -290,7 +285,7 @@ const privacyPolicySeo: SeoConfig = {
       name: 'MachineKeepr Privacy Policy',
       url: buildAbsoluteUrl('/privacy-policy'),
       description:
-        'Read the privacy policy for MachineKeepr, detailing how we handle data for on-prem machine monitoring solutions.'
+        'Read the privacy policy for MachineKeepr, detailing how we handle data for cloud-based SaaS machine monitoring solutions.'
     } satisfies SeoStructuredData
   ]
 };
@@ -298,12 +293,12 @@ const privacyPolicySeo: SeoConfig = {
 const termsOfServiceSeo: SeoConfig = {
   title: 'Terms of Service | MachineKeepr',
   description:
-    'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our on-prem machine monitoring solutions.',
+    'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our cloud-based SaaS machine monitoring solutions.',
   path: '/terms-of-service',
   keywords: [
     'terms of service',
     'user agreement',
-    'on-prem machine monitoring terms',
+    'cloud-based SaaS machine monitoring terms',
     'MachineKeepr terms'
   ],
   image: DEFAULT_OG_IMAGE,
@@ -321,7 +316,7 @@ const termsOfServiceSeo: SeoConfig = {
       name: 'MachineKeepr Terms of Service',
       url: buildAbsoluteUrl('/terms-of-service'),
       description:
-        'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our on-prem machine monitoring solutions.'
+        'Read the terms of service for MachineKeepr, outlining the rules and regulations for using our cloud-based SaaS machine monitoring solutions.'
     } satisfies SeoStructuredData
   ]
 };
