@@ -34,18 +34,46 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <ul class="footer-list">
-      <li>© 2026 MachineKeepr. Cloud-based SaaS machine operations platform.</li>
-      <li>
-        A Sharp Floor NC LLC Company —
-        <a href="https://sharpfloornc.com" target="_blank" rel="noopener noreferrer">sharpfloornc.com</a>
-      </li>
-      <li>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-brand-name" routerLink="/" aria-label="MachineKeepr home">MachineKeepr</a>
+        <p>Cloud-based SaaS machine operations platform.</p>
+        <a class="footer-company" href="https://sharpfloornc.com" target="_blank" rel="noopener noreferrer">
+          A Sharp Floor NC LLC Company
+        </a>
+      </div>
+
+      <section class="footer-social" aria-labelledby="footer-social-heading">
+        <h2 id="footer-social-heading">Connect with us</h2>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100095762820818" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/facebook.svg" width="20" height="20" alt="" />
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@jaysonguevarra9336" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/youtube.svg" width="20" height="20" alt="" />
+              <span>YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/deploy-jg/" target="_blank" rel="noopener noreferrer">
+              <img src="LI-In-Bug.png" width="23" height="20" alt="" />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© 2026 MachineKeepr. All rights reserved.</small>
+      <nav class="footer-legal" aria-label="Legal">
         <a routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a>
-      </li>
-      <li>
         <a routerLink="/terms-of-service" routerLinkActive="active">Terms of Service</a>
-      </li>
-    </ul>
+      </nav>
+    </div>
   </div>
 </footer>

@@ -134,19 +134,19 @@ const useCasesSeo: SeoConfig = {
 };
 
 const pricingSeo: SeoConfig = {
-  title: 'Machine Monitoring Pricing for Cloud-Based SaaS | MachineKeepr',
+  title: 'MachineKeepr Pricing | Free Plan and Business at $349/Month',
   description:
-    'Review pricing for MachineKeepr cloud-based SaaS plans, including single-site subscriptions, operations bundles, and custom deployments.',
+    "Compare MachineKeepr's forever-free plan with Business at $349/month. Includes a 30-day free trial, unlimited machines, tools, and jobs, and up to 50 users.",
   path: '/pricing',
   keywords: [
-    'machine monitoring pricing',
-    'cloud-based SaaS pricing',
-    'manufacturing dashboard cost',
-    'production visibility software pricing',
-    'MachineKeepr quote'
+    'MachineKeepr pricing',
+    'manufacturing management software pricing',
+    'manufacturing software free plan',
+    'machine management software subscription',
+    'manufacturing software free trial'
   ],
   image: DEFAULT_OG_IMAGE,
-  imageAlt: 'MachineKeepr pricing options for deployments',
+  imageAlt: 'MachineKeepr Free and Business manufacturing management plans',
   robots: DEFAULT_ROBOTS,
   structuredData: [
     ORGANIZATION_SCHEMA,
@@ -162,22 +162,19 @@ const pricingSeo: SeoConfig = {
       itemListElement: [
         {
           '@type': 'Offer',
-          name: 'Starter Site',
-          price: '1490',
+          name: 'Free',
+          price: '0',
           priceCurrency: 'USD',
-          description: 'A 1-year MachineKeepr cloud-based SaaS subscription for a single site.'
+          description:
+            'MachineKeepr free plan, available forever, with limits of 1 user, 100 tools, 5 machines, and 5 jobs.'
         },
         {
           '@type': 'Offer',
-          name: 'Operations Pack',
-          price: '4290',
+          name: 'Business',
+          price: '349',
           priceCurrency: 'USD',
-          description: 'A multi-site MachineKeepr SaaS subscription with priority onboarding.'
-        },
-        {
-          '@type': 'Offer',
-          name: 'Custom Deployment',
-          description: 'Custom pricing for larger deployments, integrations, and rollout planning.'
+          description:
+            'MachineKeepr Business plan, billed monthly after a 30-day free trial. Supports up to 50 users with unlimited tools, machines, and jobs.'
         }
       ]
     } satisfies SeoStructuredData
