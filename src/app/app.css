@@ -211,6 +211,26 @@
   gap: 1.25rem;
 }
 
+.login {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background: var(--mk-header-soft);
+  color: var(--mk-header-foreground);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.f-signup {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background: var(--mk-primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 @media (max-width: 760px) {
   .header-inner {
     align-items: flex-start;
